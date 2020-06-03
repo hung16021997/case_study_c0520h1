@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đập gạch</title>
+
+</head>
+<body onload="playGame()">
+<button type="button" onclick="pause()" style="width: 80px;height: 50px;position: absolute;left: 100px;top: 40px">PAUSE (Space)</button>
+<button type="button" onclick="resume()" style="width: 80px;height: 50px;position: absolute;left: 100px;top: 100px">RESUME (Enter)</button>
+<button type="button" onclick="reset()" style="width: 80px;height: 50px;position: absolute;left: 100px;top: 160px">RESET</button>
+<h2 style="position: absolute;left: 860px;top: 60px">Điểm</h2>
+<h2 id="diem" style="position: absolute;left: 875px;top: 90px"></h2>
+<canvas id="myGame" width="640px" height="550px" style="border: 4px solid sienna;left: 200px;position: absolute;
+background-color: aliceblue"></canvas>
+<script>
+    let canvas = document.getElementById('myGame');
+    let context = canvas.getContext('2d');
+</script>
+<script src="ball.js"></script>
+<script src="gach.js"></script>
+<script src="tanhdo.js"></script>
+<script src="run.js"></script>
+</body>
+</html>
